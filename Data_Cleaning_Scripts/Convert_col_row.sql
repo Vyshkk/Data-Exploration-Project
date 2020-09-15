@@ -1,3 +1,5 @@
+##create table edu_prac to update educational details of county and combine education population(3 columns) into 3 rows and an additional education column
+
 create table edu_prac(County_ID int NOT NULL,State varchar(255),County_Name varchar(255),l_hss int not null,hss int not null,ass_deg int not null,bach_deg int not null,primary key(County_ID));
 alter table edu_prac add column ID int;
 update edu_prac set ID=cast(County_ID as double);
